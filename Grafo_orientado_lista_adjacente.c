@@ -13,7 +13,7 @@ typedef struct{
 Grafo* criarGrafo(int vertices){
     Grafo* g = (Grafo*) malloc(sizeof(Grafo));
     if(g== NULL){
-        printf("Memory Error!/n");
+        printf("Memory Error!\n");
         exit(1);
     }
     g->numVertices = vertices;
@@ -31,8 +31,8 @@ No* criarNo(int v){
 }
 
 void adicionarAresta(Grafo* g, int v1, int v2) {
-    if(v1 >= g-> numVertices|| v2 >= g->numVertices){
-        printf("Invalid Vertex!/n");
+    if(v1 >= g-> numVertices || v2 >= g->numVertices){
+        printf("Invalid Vertex!\n");
         return;
     }
     No* novo = criarNo(v2);
